@@ -1,0 +1,61 @@
+$color-bg: #090806;
+$color-surface: #15120f;
+$color-text: #f4e8d3;
+$color-muted: #b9ad96;
+$color-accent: #d4a869;
+$color-line: rgba(212, 168, 105, 0.28);
+
+$font-display: "Cormorant Garamond", "Times New Roman", serif;
+$font-body: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+
+$space-md: 1.2rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+$radius-arch: 280px 280px 26px 26px;
+$radius-card: 22px;
+
+@mixin section-frame {
+  padding-block: 5rem;
+  border-top: 1px solid $color-line;
+}
+
+@mixin arch-image {
+  border-radius: $radius-arch;
+  overflow: hidden;
+}
+
+:root {
+  --color-bg: #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-text: #{$color-text};
+  --color-muted: #{$color-muted};
+  --color-accent: #{$color-accent};
+  --color-line: #{$color-line};
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+}
+
+body {
+  margin: 0;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-body;
+}
+
+.section {
+  @include section-frame;
+}
+
+.hero,
+.menu-block,
+.suggestion,
+.events,
+.gallery,
+.stay-informed,
+.site-footer {
+  // TODO_VERIFY: match exact Figma spacing and type scale.
+}
+
+.arch img {
+  @include arch-image;
+}

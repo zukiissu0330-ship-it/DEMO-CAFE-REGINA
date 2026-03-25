@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAFE REGINA | Home</title>
+  <meta name="description" content="CAFE REGINA home page mock built from Home-make brief.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/photos.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">R</div>
+          <div class="brand-copy">
+            <strong>CAFE REGINA</strong>
+            <!-- TODO_VERIFY: exact punctuation / spacing -->
+            <small>GROTE MARKT 15. 9060 ZELZATE</small>
+          </div>
+        </div>
+        <nav class="site-nav" aria-label="Main Navigation">
+          <a href="#top" aria-current="page">HOME</a>
+          <a href="#drinks">DRINKS</a>
+          <a href="#small-hunger">SMALL HUNGER</a>
+          <a href="#suggestions">SUGGESTIONS</a>
+          <a href="#photos">PHOTOS</a>
+          <a href="#about">ABOUT US</a>
+          <a href="#contact">CONTACT US</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-media">
+            <img src="assets/img/pre/Home-Hero画像.png" alt="Café Regina hero mood image">
+            <img class="hero-float hero-float--left" src="assets/img/pre/Home-Drink画像.png" alt="Decorative drink image">
+            <img class="hero-float hero-float--right" src="assets/img/pre/Home-Weekend Suggestion画像.png" alt="Decorative pouring image">
+            <span class="since-mark">Since 1927</span>
+          </div>
+          <div class="hero-content">
+            <!-- TODO_VERIFY: exact spelling and line breaks -->
+            <h1>Geniet Van Een Gezellige Tijd Bij Café Regina</h1>
+            <p>
+              Café Regina is not only the oldest, but also the nicest café in Zelzate
+              and the surrounding area. So be sure to come by and enjoy a good time!
+            </p>
+            <a class="btn" href="#contact">CONTACT</a>
+            <ol class="hero-pagination" aria-label="Hero static pager">
+              <li class="is-active">01</li>
+              <li>02</li>
+              <li>03</li>
+              <li>04</li>
+              <li>05</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-block" id="drinks">
+        <div class="container menu-grid">
+          <article>
+            <!-- TODO_VERIFY: Extensive vs Exclusive -->
+            <h2>Extensive Drinks</h2>
+            <p>
+              At Café Regina you will always find something you would like to drink.
+              They have a very extensive drinks menu, so there is something for everyone.
+              So be sure to contact us via telephone number or email address or simply
+              drop by the café for a pleasant time!
+            </p>
+          </article>
+          <figure class="menu-visual arch">
+            <img src="assets/img/pre/Home-Drink画像.png" alt="Drinks splash visual">
+          </figure>
+          <aside class="menu-side">
+            <!-- TODO_VERIFY: wording and spelling -->
+            <ul>
+              <li>BEERS BOTTLE</li>
+              <li>APERITIFS/DEGESTIVES</li>
+              <li>DRAFT BEERS</li>
+              <li>SOFT DRINKS</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">ALL MENU</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section menu-block alt" id="small-hunger">
+        <div class="container menu-grid">
+          <article>
+            <h2>Small Hunger</h2>
+            <!-- TODO_VERIFY: Small Hunger / LITTLE HUNGER wording alignment -->
+            <p>
+              Also if you want to eat, you should go to Café Regina! For example,
+              you can eat something here if you are feeling a little hungry. There is
+              the farmer's board, filled with artisan cheeses, cold cuts and crispy
+              freshly baked bread. At the weekend you will find many tasty Flemish classics.
+            </p>
+          </article>
+          <figure class="menu-visual arch">
+            <img src="assets/img/pre/Home-Small Hunger画像.png" alt="Small hunger dishes">
+          </figure>
+          <aside class="menu-side">
+            <ul>
+              <li>REFRESHMENTS</li>
+              <li>PANCAKES / WAFFLES</li>
+              <li>SAVORY</li>
+              <li>LITTLE HUNGER</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">ALL MENU</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section suggestion" id="suggestions">
+        <div class="container suggestion-head">
+          <h2>Weekend Suggestion</h2>
+          <p>
+            During the weekend at Café Regina you can treat yourself to a delicious hot meal
+            that is prepared with care and love. Our chef serves traditional Flemish classics
+            that delight your taste buds. So be sure to drop by or contact this business.
+          </p>
+          <a class="btn" href="#events">READ MORE</a>
+        </div>
+        <div class="container suggestion-collage">
+          <img class="tile tile-a" src="assets/img/pre/Home-Weekend Suggestion画像.png" alt="Weekend dish collage">
+          <img class="tile tile-b" src="assets/img/pre/Home-Drink画像.png" alt="Weekend secondary visual">
+          <img class="tile tile-c" src="assets/img/pre/Home-Small Hunger画像.png" alt="Weekend tertiary visual">
+        </div>
+      </section>
+
+      <section class="section events" id="events">
+        <div class="container events-top">
+          <div>
+            <h2>Events</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+          </div>
+          <div class="arrow-group" aria-label="Events static arrows">
+            <button type="button" class="arrow-btn" data-events-nav="prev" aria-label="Previous events">&#8592;</button>
+            <button type="button" class="arrow-btn" data-events-nav="next" aria-label="Next events">&#8594;</button>
+          </div>
+        </div>
+        <div class="container event-cards" data-events-track>
+          <article class="event-card is-active" data-event-card>
+            <img src="assets/img/pre/Home-Events画像.png" alt="Event visual 1">
+            <time datetime="2021-04-16">16 APR 2021</time>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="#contact">READ MORE</a>
+          </article>
+          <article class="event-card" data-event-card>
+            <img src="assets/img/pre/Home-Events画像.png" alt="Event visual 2">
+            <time datetime="2021-04-16">16 APR 2021</time>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="#contact">READ MORE</a>
+          </article>
+          <article class="event-card" data-event-card>
+            <!-- TODO_VERIFY: rightmost cut-off card full text -->
+            <img src="assets/img/pre/Home-Events画像.png" alt="Event visual 3">
+            <time datetime="2021-04-16">16 APR 2021</time>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="#contact">READ MORE</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery" id="photos">
+        <div class="container gallery-grid">
+          <div class="gallery-copy">
+            <h2>Photo Gallery</h2>
+            <p>
+              If you are looking for an authentic café in Zelzate, Café Regina is the right place
+              for you. Be inspired by the atmospheric photos and get a taste of what you can expect.
+            </p>
+            <div class="arrow-group" aria-label="Photo gallery navigation">
+              <button type="button" class="arrow-btn" data-gallery-nav="prev" aria-label="Previous photo">&#8592;</button>
+              <button type="button" class="arrow-btn" data-gallery-nav="next" aria-label="Next photo">&#8594;</button>
+            </div>
+            <span class="since-mark">Since 1927</span>
+          </div>
+          <div class="gallery-media">
+            <figure class="gallery-main arch">
+              <img src="assets/img/pre/Home-Photo Gallery画像.png" alt="Cafe gallery visual" data-gallery-main>
+              <figcaption data-gallery-caption>Photo Gallery</figcaption>
+            </figure>
+            <div class="gallery-thumbs">
+              <button type="button" class="thumb is-active" data-gallery-thumb data-src="assets/img/pre/Home-Photo Gallery画像.png" data-caption="Photo Gallery">
+                <img src="assets/img/pre/Home-Photo Gallery画像.png" alt="Gallery preview 1">
+              </button>
+              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/pre/Home-Hero画像.png" data-caption="Hero Mood">
+                <img src="assets/img/pre/Home-Hero画像.png" alt="Gallery preview 2">
+              </button>
+              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/pre/Home-Drink画像.png" data-caption="Drinks Mood">
+                <img src="assets/img/pre/Home-Drink画像.png" alt="Gallery preview 3">
+              </button>
+              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/pre/Home-Small Hunger画像.png" data-caption="Food Mood">
+                <img src="assets/img/pre/Home-Small Hunger画像.png" alt="Gallery preview 4">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stay-informed" id="newsletter">
+        <div class="container stay-intro">
+          <h2>Stay informed</h2>
+          <p>
+            Stay up to date with everything that happens at Café Regina. You can always find
+            the latest news in the newsletter, so be sure to take a look.
+          </p>
+        </div>
+        <div class="container newsletter-box">
+          <img src="assets/img/pre/Home-Stay informd&amp;Newsltter画像.png" alt="Newsletter ambience">
+          <div class="newsletter-content">
+            <p class="eyebrow">NEWSLETTER</p>
+            <h3>Subscribe To Our Newsletter</h3>
+            <p>And never miss latest Updates!</p>
+            <form action="#" method="post" class="newsletter-form">
+              <label class="sr-only" for="newsletter-email">Email Address</label>
+              <input id="newsletter-email" name="email" type="email" placeholder="Email Address">
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section" id="about">
+      <div class="container footer-grid">
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>Grote Markt 15 9060 Zelzate</p>
+          <p>(East Flanders) Belgium</p>
+          <!-- TODO_VERIFY: phone / VAT / formatting -->
+          <p>+0468 06 80 91</p>
+          <p>info@caferegina.be</p>
+          <p>VAT BE 0768.703.620</p>
+        </section>
+        <section>
+          <!-- TODO_VERIFY: Cafe vs Café -->
+          <h2>CAFE REGINA</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <ul class="social-list" aria-label="Social links">
+            <li><a href="#" aria-label="Instagram">IG</a></li>
+            <li><a href="#" aria-label="Facebook">FB</a></li>
+            <li><a href="#" aria-label="X">X</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Opening Hours</h2>
+          <!-- TODO_VERIFY: exact spacing -->
+          <p>Monday-Friday:</p>
+          <p>08:00 am - 12:00 am</p>
+          <p>Saturday-Sunday:</p>
+          <p>07:00 am - 11:00 pm</p>
+        </section>
+      </div>
+      <div class="container copyright">
+        <img src="assets/img/pre/Home-フッター画像.png" alt="" aria-hidden="true">
+        <p>2024 Cafe Regina. All Rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
