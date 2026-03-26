@@ -1,0 +1,29 @@
+:root {
+  --color-text-main: #ffffff;
+  --color-text-muted: #969493;
+  --color-accent: #dcca87;
+  --color-display-overlay: #6d6d6d;
+  --color-placeholder: #aaaaaa;
+  --color-button-text-dark: #000000;
+
+  --font-display-main: "Harmond", "Cormorant Garamond", "Times New Roman", serif;
+  --font-display-sub: "Athina Regular", "Cinzel Decorative", "Cormorant Garamond", serif;
+  --font-body: "Inter", "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+
+  --color-bg: #090806;
+  --color-surface: #15120f;
+  --color-surface-soft: #1b1713;
+  --color-line: rgba(220, 202, 135, 0.28);
+  --shadow-strong: 0 24px 48px rgba(0, 0, 0, 0.45);
+
+  --container-max: 1280px;
+  --radius-arch: 280px 280px 26px 26px;
+  --radius-card: 22px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.2rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+}
