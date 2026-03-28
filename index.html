@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/photos.js"></script>
 </head>
-<body>
+<body class="page page-home">
   <div class="page-shell">
     <!-- Header -->
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="CAFE REGINA home">
-          <span class="brand-mark" aria-hidden="true">R</span>
-          <span class="brand-copy">
-            <strong>CAFE REGINA</strong>
-            <!-- TODO_VERIFY: exact punctuation / spacing -->
-            <small>GROTE MARKT 15, 9060 ZELZATE</small>
-          </span>
+          <img
+            class="brand-logo"
+            src="assets/img/logo/brand-logo.svg"
+            alt="CAFE REGINA"
+            width="105"
+            height="105"
+          >
         </a>
         <nav class="site-nav" aria-label="Main Navigation">
           <a href="#top" aria-current="page">HOME</a>
@@ -35,22 +36,22 @@
 
     <main>
       <!-- Hero -->
-      <section class="section hero" id="home">
-        <div class="container hero-wrap">
-          <div class="hero-stage">
-            <figure class="hero-main arch">
+      <section class="section home-hero" id="home">
+        <div class="container home-hero-wrap">
+          <div class="home-hero-stage">
+            <figure class="home-hero-main arch">
               <img src="assets/img/hero-main-arch.png" alt="Café Regina interior hero scene">
             </figure>
-            <img class="hero-float hero-float--left" src="assets/img/hero-drink-left-arch.png" alt="Decorative drink image">
-            <img class="hero-float hero-float--right" src="assets/img/hero-pour-right-arch.png" alt="Decorative pouring image">
-            <h1 class="hero-title">
+            <img class="home-hero-float home-hero-float--left" src="assets/img/hero-drink-left-arch.png" alt="Decorative drink image">
+            <img class="home-hero-float home-hero-float--right" src="assets/img/hero-pour-right-arch.png" alt="Decorative pouring image">
+            <h1 class="home-hero-title">
               <!-- TODO_VERIFY: exact spelling and line breaks -->
               <span>Geniet Van Een</span>
               <span>Gezellige Tijd</span>
               <span>Bij Café Regina</span>
             </h1>
           </div>
-          <div class="hero-meta">
+          <div class="home-hero-meta">
             <p>
               Café Regina is not only the oldest, but also the nicest café in Zelzate and the
               surrounding area. So be sure to come by and enjoy a good time!
@@ -59,8 +60,8 @@
               <span>CONTACT</span>
               <span class="cta-ring" aria-hidden="true">&#8594;</span>
             </a>
-            <div class="hero-footer">
-              <ol class="hero-pagination" aria-label="Hero static pager">
+            <div class="home-hero-footer">
+              <ol class="home-hero-pagination" aria-label="Hero static pager">
                 <li class="is-active">01</li>
                 <li>02</li>
                 <li>03</li>
@@ -74,9 +75,9 @@
       </section>
 
       <!-- Drinks -->
-      <section class="section menu-block" id="drinks">
-        <div class="container menu-grid">
-          <article class="menu-copy">
+      <section class="section home-menu-block" id="drinks">
+        <div class="container home-menu-grid">
+          <article class="home-menu-copy">
             <!-- TODO_VERIFY: Extensive vs Exclusive -->
             <h2>Extensive Drinks</h2>
             <p>
@@ -85,17 +86,17 @@
               telephone number or email address or simply drop by the café for a pleasant time!
             </p>
           </article>
-          <figure class="menu-visual arch">
+          <figure class="home-menu-visual arch">
             <img src="assets/img/drinks-berry-splash.png" alt="Drinks splash visual">
           </figure>
-          <aside class="menu-side">
+          <aside class="home-menu-side">
             <ul>
               <li>BEERS BOTTLE</li>
               <li>APERITIFS/DEGESTIVES</li>
               <li>DRAFT BEERS</li>
               <li>SOFT DRINKS</li>
             </ul>
-            <a class="cta-link cta-link--menu" href="#contact">
+            <a class="cta-link home-cta-link--menu" href="#contact">
               <span>ALL MENU</span>
               <span class="cta-ring" aria-hidden="true">&#8594;</span>
             </a>
@@ -104,9 +105,9 @@
       </section>
 
       <!-- Small Hunger -->
-      <section class="section menu-block alt" id="small-hunger">
-        <div class="container menu-grid">
-          <article class="menu-copy">
+      <section class="section home-menu-block home-menu-block--alt" id="small-hunger">
+        <div class="container home-menu-grid">
+          <article class="home-menu-copy">
             <h2>Small Hunger</h2>
             <!-- TODO_VERIFY: Small Hunger / LITTLE HUNGER wording alignment -->
             <p>
@@ -117,17 +118,17 @@
               cheeks with abbey beer.
             </p>
           </article>
-          <figure class="menu-visual arch">
+          <figure class="home-menu-visual arch">
             <img src="assets/img/small-hunger-chips-floating.png" alt="Small hunger dishes">
           </figure>
-          <aside class="menu-side">
+          <aside class="home-menu-side">
             <ul>
               <li>REFRESHMENTS</li>
               <li>PANCAKES / WAFFLES</li>
               <li>SAVORY</li>
               <li>LITTLE HUNGER</li>
             </ul>
-            <a class="cta-link cta-link--menu" href="#contact">
+            <a class="cta-link home-cta-link--menu" href="#contact">
               <span>ALL MENU</span>
               <span class="cta-ring" aria-hidden="true">&#8594;</span>
             </a>
@@ -136,8 +137,8 @@
       </section>
 
       <!-- Weekend Suggestion -->
-      <section class="section suggestion" id="suggestions">
-        <div class="container suggestion-head">
+      <section class="section home-suggestion" id="suggestions">
+        <div class="container home-suggestion-head">
           <h2>Weekend Suggestion</h2>
           <p>
             During the weekend at Café Regina you can treat yourself to a delicious hot meal that is
@@ -150,18 +151,18 @@
             <span class="cta-ring" aria-hidden="true">&#8594;</span>
           </a>
         </div>
-        <div class="container suggestion-collage">
-          <img class="tile tile-a" src="assets/img/suggestion-mojito-center-arch.png" alt="Weekend suggestion center drink">
-          <img class="tile tile-b" src="assets/img/suggestion-drink-left-arch.png" alt="Weekend suggestion left drink">
-          <img class="tile tile-c" src="assets/img/suggestion-loaded-fries-arch.png" alt="Weekend suggestion loaded fries">
-          <img class="tile tile-d" src="assets/img/suggestion-meal-right-arch.png" alt="Weekend suggestion meal">
-          <img class="tile tile-e" src="assets/img/suggestion-pizza-right-crop.png" alt="Weekend suggestion pizza">
+        <div class="container home-suggestion-collage">
+          <img class="home-tile home-tile-a" src="assets/img/suggestion-mojito-center-arch.png" alt="Weekend suggestion center drink">
+          <img class="home-tile home-tile-b" src="assets/img/suggestion-drink-left-arch.png" alt="Weekend suggestion left drink">
+          <img class="home-tile home-tile-c" src="assets/img/suggestion-loaded-fries-arch.png" alt="Weekend suggestion loaded fries">
+          <img class="home-tile home-tile-d" src="assets/img/suggestion-meal-right-arch.png" alt="Weekend suggestion meal">
+          <img class="home-tile home-tile-e" src="assets/img/suggestion-pizza-right-crop.png" alt="Weekend suggestion pizza">
         </div>
       </section>
 
       <!-- Events -->
       <section class="section events" id="events">
-        <div class="container events-top">
+        <div class="container home-events-top">
           <div>
             <h2>Events</h2>
             <p>
@@ -175,22 +176,22 @@
             <button type="button" class="arrow-btn" data-events-nav="next" aria-label="Next events">&#8594;</button>
           </div>
         </div>
-        <div class="container event-cards" data-events-track>
-          <article class="event-card is-active" data-event-card>
+        <div class="container home-event-cards" data-events-track>
+          <article class="home-event-card is-active" data-event-card>
             <img src="assets/img/events-card-01-relax-bar.png" alt="Relax bar event scene">
             <time datetime="2021-04-16">16 APR 2021</time>
             <h3>Lorem Ipsum Dolor</h3>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
             <a href="#contact">READ MORE</a>
           </article>
-          <article class="event-card" data-event-card>
+          <article class="home-event-card" data-event-card>
             <img src="assets/img/events-card-03-terrace.png" alt="Terrace event scene">
             <time datetime="2021-04-16">16 APR 2021</time>
             <h3>Lorem Ipsum Dolor</h3>
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
             <a href="#contact">READ MORE</a>
           </article>
-          <article class="event-card" data-event-card>
+          <article class="home-event-card" data-event-card>
             <!-- TODO_VERIFY: rightmost cut-off card full text -->
             <img src="assets/img/events-card-05-photo-wall-crop.png" alt="Photo wall event scene">
             <time datetime="2021-04-16">16 APR 2021</time>
@@ -203,8 +204,8 @@
 
       <!-- Photo Gallery -->
       <section class="section gallery" id="photos">
-        <div class="container gallery-grid">
-          <div class="gallery-copy">
+        <div class="container home-gallery-grid">
+          <div class="home-gallery-copy">
             <h2>Photo Gallery</h2>
             <p>
               If you are looking for an authentic café in Zelzate, Café Regina is the right place for
@@ -218,21 +219,21 @@
             <span class="since-mark">Since 1927</span>
           </div>
           <div class="gallery-media">
-            <figure class="gallery-main arch">
+            <figure class="home-gallery-main arch">
               <img src="assets/img/gallery-pancakes.png" alt="Photo Gallery" data-gallery-main>
               <figcaption data-gallery-caption>Photo Gallery</figcaption>
             </figure>
-            <div class="gallery-thumbs">
-              <button type="button" class="thumb is-active" data-gallery-thumb data-src="assets/img/gallery-pancakes.png" data-caption="Photo Gallery">
+            <div class="home-gallery-thumbs">
+              <button type="button" class="home-thumb is-active" data-gallery-thumb data-src="assets/img/gallery-pancakes.png" data-caption="Photo Gallery">
                 <img src="assets/img/gallery-pancakes.png" alt="Gallery preview pancakes">
               </button>
-              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/gallery-salad.png" data-caption="Salad">
+              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-salad.png" data-caption="Salad">
                 <img src="assets/img/gallery-salad.png" alt="Gallery preview salad">
               </button>
-              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/gallery-dessert-crop.png" data-caption="Dessert">
+              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-dessert-crop.png" data-caption="Dessert">
                 <img src="assets/img/gallery-dessert-crop.png" alt="Gallery preview dessert">
               </button>
-              <button type="button" class="thumb" data-gallery-thumb data-src="assets/img/gallery-pizza.png" data-caption="Pizza">
+              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-pizza.png" data-caption="Pizza">
                 <img src="assets/img/gallery-pizza.png" alt="Gallery preview pizza">
               </button>
             </div>
@@ -241,8 +242,8 @@
       </section>
 
       <!-- Stay informed + Newsletter -->
-      <section class="section stay-informed" id="newsletter">
-        <div class="container stay-intro">
+      <section class="section home-stay-informed" id="newsletter">
+        <div class="container home-stay-intro">
           <h2>Stay informed</h2>
           <p>
             Stay up to date with everything that happens at Café Regina! This business believes it is
@@ -250,13 +251,13 @@
             always find all the latest news in the newsletter, so be sure to take a look.
           </p>
         </div>
-        <div class="container newsletter-box">
+        <div class="container home-newsletter-box">
           <img src="assets/img/events-card-04-interior-lounge.png" alt="Newsletter ambience">
-          <div class="newsletter-content">
-            <p class="eyebrow">NEWSLETTER</p>
+          <div class="home-newsletter-content">
+            <p class="home-eyebrow">NEWSLETTER</p>
             <h3>Subscribe To Our Newsletter</h3>
-            <p class="newsletter-sub">And never miss latest Updates!</p>
-            <form action="#" method="post" class="newsletter-form">
+            <p class="home-newsletter-sub">And never miss latest Updates!</p>
+            <form action="#" method="post" class="home-newsletter-form">
               <label class="sr-only" for="newsletter-email">Email Address</label>
               <input id="newsletter-email" name="email" type="email" placeholder="Email Address">
               <button type="submit">SUBSCRIBE</button>
