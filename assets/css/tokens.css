@@ -6,9 +6,9 @@
   --color-placeholder: #aaaaaa;
   --color-button-text-dark: #000000;
 
-  --font-display-main: "Harmond", "Cormorant Garamond", "Times New Roman", serif;
-  --font-display-sub: "Athina Regular", "Cinzel Decorative", "Cormorant Garamond", serif;
-  --font-body: "Inter", "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display-main: "Bodoni Moda", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-display-sub: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", Arial, Helvetica, sans-serif;
 
   --color-bg: #090806;
   --color-surface: #15120f;

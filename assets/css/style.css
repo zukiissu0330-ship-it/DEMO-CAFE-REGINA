@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 @import url("./tokens.css");
 @import url("./base.css");
 @import url("./components.css");
+
+@import url("./pages/home.css");
+@import url("./pages/about-us.css");
+@import url("./pages/contact-us.css");
+@import url("./pages/drinks.css");
+@import url("./pages/events.css");
+@import url("./pages/photos.css");
+@import url("./pages/small-hunger.css");
+@import url("./pages/suggestions.css");

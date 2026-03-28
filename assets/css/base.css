@@ -131,6 +131,7 @@ p {
 .arrow-btn,
 .site-nav a,
 .thumb,
+.home-thumb,
 .social-list a {
   transition: all 0.2s ease;
 }
@@ -165,6 +166,13 @@ p {
   display: inline-flex;
   align-items: center;
   gap: var(--space-md);
+}
+
+.brand-logo {
+  width: 105px;
+  height: 105px;
+  display: block;
+  object-fit: contain;
 }
 
 .brand-mark {
