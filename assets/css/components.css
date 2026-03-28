@@ -1,3 +1,117 @@
+/* Header */
+
+.header-inner {
+  width: min(1440px, 100%);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 6.95vw, 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: clamp(1.2rem, 4vw, 3rem);
+}
+
+.site-brand {
+  display: grid;
+  justify-items: start;
+  gap: 0.85rem;
+  color: var(--color-text-main);
+}
+
+.brand-logo {
+  width: 105px;
+  height: 105px;
+  display: block;
+  object-fit: contain;
+}
+
+.site-brand-copy {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.site-brand-copy strong {
+  font-family: var(--font-display-sub);
+  font-size: clamp(1.85rem, 2.9vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+}
+
+.site-brand-copy small {
+  font-family: var(--font-display-sub);
+  font-size: clamp(0.74rem, 1vw, 0.92rem);
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  color: color-mix(in srgb, var(--color-text-main) 78%, var(--color-accent));
+}
+
+.site-nav {
+  margin-top: 1.15rem;
+}
+
+.site-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: clamp(1rem, 2.6vw, 2.5rem);
+}
+
+.site-nav-list a {
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.site-nav-list a[aria-current="page"],
+.site-nav-list a:hover,
+.site-nav-list a:focus-visible {
+  color: var(--color-accent);
+}
+
+.site-brand:focus-visible,
+.site-nav-list a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-accent) 75%, #ffffff);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* header-mimi */
+.page-header {
+    background: #040404;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+}
+
+.page-header .header-inner {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.page-header .site-brand {
+    display: block;
+    justify-items: center;
+    gap: 0.85rem;
+    color: var(--color-text-main);
+}
+
+.page-header .site-nav {
+    margin-top:0;
+}
+
+.page-header .site-nav-list {
+    flex-wrap: nowrap;
+}
+
+
+
 /* Footer */
 .site-footer {
   margin-top: var(--space-2xl);
