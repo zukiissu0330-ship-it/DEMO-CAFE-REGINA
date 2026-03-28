@@ -159,6 +159,10 @@
   color: var(--color-accent);
 }
 
+#footer-brand-title {
+  color: var(--color-accent);
+}
+
 .footer-brand-copy {
   width: 438px;
   max-width: 100%;
@@ -211,10 +215,20 @@
 }
 
 .footer-bottom {
+  position: relative;
   margin-top: clamp(1.8rem, 3.8vw, 3.2rem);
-  border-top: 1px solid color-mix(in srgb, var(--color-accent) 24%, transparent);
   padding-block: 0.95rem 1.2rem;
   text-align: center;
+}
+
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 24%, transparent);
+  transform: translateX(-50%);
 }
 
 .footer-bottom p {
