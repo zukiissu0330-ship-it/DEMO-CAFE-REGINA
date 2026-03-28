@@ -266,10 +266,6 @@
 }
 
 @media (max-width: 1180px) {
-  .site-nav-list {
-    gap: 1.1rem;
-  }
-
   .footer-main {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -296,20 +292,6 @@
 
   .section {
     padding-block: 3.6rem;
-  }
-
-  .header-inner {
-    gap: 1rem;
-    padding-inline: 1rem;
-  }
-
-  .site-nav {
-    width: 100%;
-    margin-top: 0.35rem;
-  }
-
-  .site-nav-list {
-    justify-content: flex-start;
   }
 
   .footer-inner {

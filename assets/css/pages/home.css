@@ -1,3 +1,90 @@
+/* Home Header (isolated) */
+.page-home .site-header {
+  position: relative;
+  z-index: 30;
+}
+
+.page-home .header-inner {
+  width: min(1440px, 100%);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 6.95vw, 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: clamp(1.2rem, 4vw, 3rem);
+}
+
+.page-home .site-brand {
+  display: grid;
+  justify-items: start;
+  gap: 0.85rem;
+  color: var(--color-text-main);
+}
+
+.page-home .brand-logo {
+  width: 105px;
+  height: 105px;
+  display: block;
+  object-fit: contain;
+}
+
+.page-home .site-brand-copy {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.page-home .site-brand-copy strong {
+  font-family: var(--font-display-sub);
+  font-size: clamp(1.85rem, 2.9vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+}
+
+.page-home .site-brand-copy small {
+  font-family: var(--font-display-sub);
+  font-size: clamp(0.74rem, 1vw, 0.92rem);
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  color: color-mix(in srgb, var(--color-text-main) 78%, var(--color-accent));
+}
+
+.page-home .site-nav {
+  margin-top: 1.15rem;
+}
+
+.page-home .site-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: clamp(1rem, 2.6vw, 2.5rem);
+}
+
+.page-home .site-nav-list a {
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-home .site-nav-list a[aria-current="page"],
+.page-home .site-nav-list a:hover,
+.page-home .site-nav-list a:focus-visible {
+  color: var(--color-accent);
+}
+
+.page-home .site-brand:focus-visible,
+.page-home .site-nav-list a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-accent) 75%, #ffffff);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 /* Home Header Overlay */
 .page-home .site-header {
   position: absolute;
@@ -10,7 +97,6 @@
 }
 
 .page-home .header-inner {
-  padding-inline: clamp(1.25rem, 6.95vw, 100px);
   display: grid;
   grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
   align-items: flex-start;
@@ -478,6 +564,10 @@
 
 
 @media (max-width: 1180px) {
+  .page-home .site-nav-list {
+    gap: 1.1rem;
+  }
+
   .home-hero-title {
     inset: auto 3% 5% 3%;
     font-size: clamp(3rem, 9.6vw, 8.4rem);
@@ -509,6 +599,7 @@
 
   .page-home .header-inner {
     display: flex;
+    gap: 1rem;
     padding-inline: 1rem;
   }
 
@@ -516,6 +607,10 @@
     margin-top: 0.35rem;
     width: 100%;
     justify-self: auto;
+  }
+
+  .page-home .site-nav-list {
+    justify-content: flex-start;
   }
 
   .home-hero {
