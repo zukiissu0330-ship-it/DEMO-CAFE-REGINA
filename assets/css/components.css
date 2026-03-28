@@ -1,8 +1,4 @@
 /* Header */
-.site-header {
-  position: relative;
-  z-index: 30;
-}
 
 .header-inner {
   width: min(1440px, 100%);
@@ -66,9 +62,9 @@
   color: var(--color-text-main);
   font-family: var(--font-body);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -84,6 +80,37 @@
   outline-offset: 4px;
   border-radius: 4px;
 }
+
+/* header-mimi */
+.page-header {
+    background: #040404;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+}
+
+.page-header .header-inner {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.page-header .site-brand {
+    display: block;
+    justify-items: center;
+    gap: 0.85rem;
+    color: var(--color-text-main);
+}
+
+.page-header .site-nav {
+    margin-top:0;
+}
+
+.page-header .site-nav-list {
+    flex-wrap: nowrap;
+}
+
+
 
 /* Footer */
 .site-footer {
