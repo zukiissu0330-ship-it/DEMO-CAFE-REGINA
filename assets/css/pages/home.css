@@ -1,7 +1,31 @@
+/* Home Header Overlay */
+.page-home .site-header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border-bottom: none;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.page-home .header-inner {
+  padding-inline: clamp(1.25rem, 6.95vw, 100px);
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
+  align-items: flex-start;
+}
+
+.page-home .site-nav {
+  margin-top: 20px;
+  width: min(840px, 100%);
+  justify-self: end;
+}
+
 /* Hero */
 .home-hero {
   border-top: none;
-  padding-top: 3.6rem;
+  padding-top: 7.4rem;
 }
 
 .home-hero-wrap {
@@ -476,6 +500,24 @@
 }
 
 @media (max-width: 860px) {
+  .page-home .site-header {
+    position: static;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 22%, transparent);
+    background: color-mix(in srgb, #090806 90%, transparent);
+    backdrop-filter: blur(8px);
+  }
+
+  .page-home .header-inner {
+    display: flex;
+    padding-inline: 1rem;
+  }
+
+  .page-home .site-nav {
+    margin-top: 0.35rem;
+    width: 100%;
+    justify-self: auto;
+  }
+
   .home-hero {
     padding-top: 2.8rem;
   }

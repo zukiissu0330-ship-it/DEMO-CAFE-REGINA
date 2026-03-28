@@ -12,8 +12,8 @@
   <div class="page-shell">
     <!-- Header -->
     <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="CAFE REGINA home">
+      <div class="header-inner">
+        <a class="site-brand" href="#top" aria-label="CAFE REGINA home">
           <img
             class="brand-logo"
             src="assets/img/logo/brand-logo.svg"
@@ -21,15 +21,21 @@
             width="105"
             height="105"
           >
+          <span class="site-brand-copy">
+            <strong>CAFE REGINA</strong>
+            <small>GROTE MARKT 15, 9060 ZELZATE</small>
+          </span>
         </a>
         <nav class="site-nav" aria-label="Main Navigation">
-          <a href="#top" aria-current="page">HOME</a>
-          <a href="#drinks">DRINKS</a>
-          <a href="#small-hunger">SMALL HUNGER</a>
-          <a href="#suggestions">SUGGESTIONS</a>
-          <a href="#photos">PHOTOS</a>
-          <a href="#about">ABOUT US</a>
-          <a href="#contact">CONTACT US</a>
+          <ul class="site-nav-list">
+            <li><a href="#top" aria-current="page">HOME</a></li>
+            <li><a href="#drinks">DRINKS</a></li>
+            <li><a href="#small-hunger">SMALL HUNGER</a></li>
+            <li><a href="#suggestions">SUGGESTIONS</a></li>
+            <li><a href="#photos">PHOTOS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -268,38 +274,45 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer section" id="about">
-      <div class="container footer-grid">
-        <section id="contact">
-          <h2>Contact Us</h2>
-          <p>Grote Markt 15 9060 Zelzate</p>
-          <p>(East Flanders) Belgium</p>
-          <!-- TODO_VERIFY: phone / VAT / formatting -->
-          <p>+0468 06 80 91</p>
-          <p>info@caferegina.be</p>
-          <p>VAT BE 0768.703.620</p>
-        </section>
-        <section class="footer-center">
-          <!-- TODO_VERIFY: Cafe vs Café -->
-          <h2 class="footer-brand">CAFE REGINA</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <ul class="social-list" aria-label="Social links">
-            <li><a href="#" aria-label="Instagram">IG</a></li>
-            <li><a href="#" aria-label="Facebook">FB</a></li>
-            <li><a href="#" aria-label="X">X</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2>Opening Hours</h2>
-          <!-- TODO_VERIFY: exact spacing -->
-          <p>Monday-Friday:</p>
-          <p>08:00 am - 12:00 am</p>
-          <p>Saturday-Sunday:</p>
-          <p>07:00 am - 11:00 pm</p>
-        </section>
-      </div>
-      <div class="container copyright">
-        <p>2024 Cafe Regina. All Rights reserved.</p>
+    <footer class="site-footer" id="about">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <section class="footer-contact" id="contact" aria-labelledby="footer-contact-title">
+            <h2 id="footer-contact-title">Contact Us</h2>
+            <address>
+              <p>Grote Markt 15 9060 Zelzate</p>
+              <p>(East Flanders) Belgium</p>
+              <p><a href="tel:+32468068091">+0468 06 80 91</a></p>
+              <p><a href="mailto:info@caferegina.be">info@caferegina.be</a></p>
+              <p>VAT BE 0768.703.620</p>
+            </address>
+          </section>
+
+          <section class="footer-brand-block" aria-labelledby="footer-brand-title">
+            <h2 class="footer-brand-title" id="footer-brand-title">CAFE REGINA</h2>
+            <p class="footer-brand-copy">
+              Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.
+            </p>
+            <span class="footer-brand-line" aria-hidden="true"></span>
+            <ul class="social-list" aria-label="Social links">
+              <li><a href="#" aria-label="Facebook">Facebook</a></li>
+              <li><a href="#" aria-label="Twitter">Twitter</a></li>
+              <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-hours" aria-labelledby="footer-hours-title">
+            <h2 id="footer-hours-title">Opening Hours</h2>
+            <p>Monday-Friday:</p>
+            <p>08:00 am -12:00 am</p>
+            <p>Saturday-Sunday:</p>
+            <p>07:00am -11:00 pm</p>
+          </section>
+        </div>
+
+        <div class="footer-bottom">
+          <p>2024 Cafe Regina. All Rights reserved.</p>
+        </div>
       </div>
     </footer>
   </div>
