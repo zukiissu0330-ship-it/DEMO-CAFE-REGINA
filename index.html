@@ -10,63 +10,41 @@
 </head>
 <body class="page page-home">
   <div class="page-shell">
-    <!-- Header -->
-    <header class="site-header" id="top">
-      <div class="header-inner">
-        <a class="site-brand" href="#top" aria-label="CAFE REGINA home">
-          <img
-            class="brand-logo"
-            src="assets/img/logo/brand-logo.svg"
-            alt="CAFE REGINA"
-            width="105"
-            height="105"
-          >
-          <span class="site-brand-copy">
-            <strong>CAFE REGINA</strong>
-            <small>GROTE MARKT 15, 9060 ZELZATE</small>
-          </span>
-        </a>
-        <nav class="site-nav" aria-label="Main Navigation">
-          <ul class="site-nav-list">
-            <li><a href="#top" aria-current="page">HOME</a></li>
-            <li><a href="#drinks">DRINKS</a></li>
-            <li><a href="#small-hunger">SMALL HUNGER</a></li>
-            <li><a href="#suggestions">SUGGESTIONS</a></li>
-            <li><a href="#photos">PHOTOS</a></li>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="home-top-band">
+      <!-- Header -->
+      <header class="home-header" id="top">
+        <div class="home-header-inner">
+          <a class="home-brand" href="#top" aria-label="CAFE REGINA home">
+            <img
+              class="brand-logo"
+              src="assets/img/logo/brand-logo.svg"
+              alt="CAFE REGINA"
+              width="105"
+              height="105"
+            >
+          </a>
+          <nav class="home-nav" aria-label="Main Navigation">
+            <ul class="home-nav-list">
+              <li><a href="#top" aria-current="page">HOME</a></li>
+              <li><a href="#drinks">DRINKS</a></li>
+              <li><a href="#small-hunger">SMALL HUNGER</a></li>
+              <li><a href="#suggestions">SUGGESTIONS</a></li>
+              <li><a href="#photos">PHOTOS</a></li>
+              <li><a href="#about">ABOUT US</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <main>
-      <!-- Hero -->
-      <section class="section home-hero" id="home">
-        <div class="container home-hero-wrap">
-          <div class="home-hero-stage">
-            <figure class="home-hero-main arch">
-              <img src="assets/img/hero-main-arch.png" alt="Café Regina interior hero scene">
-            </figure>
-            <img class="home-hero-float home-hero-float--left" src="assets/img/hero-drink-left-arch.png" alt="Decorative drink image">
-            <img class="home-hero-float home-hero-float--right" src="assets/img/hero-pour-right-arch.png" alt="Decorative pouring image">
-            <h1 class="home-hero-title">
-              <!-- TODO_VERIFY: exact spelling and line breaks -->
-              <span>Geniet Van Een</span>
-              <span>Gezellige Tijd</span>
-              <span>Bij Café Regina</span>
-            </h1>
-          </div>
-          <div class="home-hero-meta">
-            <p>
-              Café Regina is not only the oldest, but also the nicest café in Zelzate and the
-              surrounding area. So be sure to come by and enjoy a good time!
-            </p>
-            <a class="cta-link" href="#contact">
-              <span>CONTACT</span>
-              <span class="cta-ring" aria-hidden="true">&#8594;</span>
-            </a>
-            <div class="home-hero-footer">
+      <main>
+        <!-- Hero -->
+        <section class="section home-hero" id="home">
+          <div class="container home-hero-wrap">
+            <div class="home-hero-stage">
+              <figure class="home-hero-main arch">
+                <img src="assets/img/hero-main-arch.png" alt="Café Regina interior hero scene">
+              </figure>
               <ol class="home-hero-pagination" aria-label="Hero static pager">
                 <li class="is-active">01</li>
                 <li>02</li>
@@ -74,14 +52,43 @@
                 <li>04</li>
                 <li>05</li>
               </ol>
-              <span class="since-mark">Since 1927</span>
+              <img class="home-hero-float home-hero-float--left" src="assets/img/hero-drink-left-arch.png" alt="Decorative drink image">
+              <img class="home-hero-float home-hero-float--right" src="assets/img/hero-pour-right-arch.png" alt="Decorative pouring image">
+              <div class="home-hero-brand-copy">
+                <div class="home-hero-brand-lockup">
+                  <div class="home-hero-brand-top">
+                    <strong>CAFE</strong>
+                    <span class="home-hero-brand-rule" aria-hidden="true"></span>
+                  </div>
+                  <div class="home-hero-brand-bottom">
+                    <strong>REGINA</strong>
+                    <small>GROTE MARKT 15,<br>9060 ZELZATE</small>
+                  </div>
+                </div>
+              </div>
+              <h1 class="home-hero-title">
+                <!-- TODO_VERIFY: exact spelling and line breaks -->
+                <span>Geniet Van Een</span>
+                <span>Gezellige Tijd</span>
+                <span>Bij Café Regina</span>
+              </h1>
+              <p class="home-hero-copy">
+                Café Regina is not only the oldest, but also the nicest café in Zelzate and the
+                surrounding area. So be sure to come by and enjoy a good time!
+              </p>
+              <a class="cta-link home-hero-contact" href="#contact">
+                <span class="cta-link__label">CONTACT</span>
+                <span class="cta-link__visual" aria-hidden="true">
+                  <img class="cta-link__icon" src="assets/img/Contact.png" alt="">
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Drinks -->
-      <section class="section home-menu-block" id="drinks">
+        <div class="home-section-band home-section-band--menu">
+          <!-- Drinks -->
+          <section class="section home-menu-block" id="drinks">
         <div class="container home-menu-grid">
           <article class="home-menu-copy">
             <!-- TODO_VERIFY: Extensive vs Exclusive -->
@@ -92,7 +99,7 @@
               telephone number or email address or simply drop by the café for a pleasant time!
             </p>
           </article>
-          <figure class="home-menu-visual arch">
+          <figure class="home-menu-visual home-menu-visual--drinks arch">
             <img src="assets/img/drinks-berry-splash.png" alt="Drinks splash visual">
           </figure>
           <aside class="home-menu-side">
@@ -103,15 +110,17 @@
               <li>SOFT DRINKS</li>
             </ul>
             <a class="cta-link home-cta-link--menu" href="#contact">
-              <span>ALL MENU</span>
-              <span class="cta-ring" aria-hidden="true">&#8594;</span>
+              <span class="cta-link__label">ALL MENU</span>
+              <span class="cta-link__visual" aria-hidden="true">
+                <img class="cta-link__icon" src="assets/img/Contact.png" alt="">
+              </span>
             </a>
           </aside>
         </div>
-      </section>
+          </section>
 
-      <!-- Small Hunger -->
-      <section class="section home-menu-block home-menu-block--alt" id="small-hunger">
+          <!-- Small Hunger -->
+          <section class="section home-menu-block home-menu-block--alt" id="small-hunger">
         <div class="container home-menu-grid">
           <article class="home-menu-copy">
             <h2>Small Hunger</h2>
@@ -135,15 +144,17 @@
               <li>LITTLE HUNGER</li>
             </ul>
             <a class="cta-link home-cta-link--menu" href="#contact">
-              <span>ALL MENU</span>
-              <span class="cta-ring" aria-hidden="true">&#8594;</span>
+              <span class="cta-link__label">ALL MENU</span>
+              <span class="cta-link__visual" aria-hidden="true">
+                <img class="cta-link__icon" src="assets/img/Contact.png" alt="">
+              </span>
             </a>
           </aside>
         </div>
-      </section>
+          </section>
 
-      <!-- Weekend Suggestion -->
-      <section class="section home-suggestion" id="suggestions">
+          <!-- Weekend Suggestion -->
+          <section class="section home-suggestion" id="suggestions">
         <div class="container home-suggestion-head">
           <h2>Weekend Suggestion</h2>
           <p>
@@ -153,8 +164,10 @@
             business!
           </p>
           <a class="cta-link" href="#events">
-            <span>READ MORE</span>
-            <span class="cta-ring" aria-hidden="true">&#8594;</span>
+            <span class="cta-link__label">READ MORE</span>
+            <span class="cta-link__visual" aria-hidden="true">
+              <img class="cta-link__icon" src="assets/img/Contact.png" alt="">
+            </span>
           </a>
         </div>
         <div class="container home-suggestion-collage">
@@ -164,10 +177,12 @@
           <img class="home-tile home-tile-d" src="assets/img/suggestion-meal-right-arch.png" alt="Weekend suggestion meal">
           <img class="home-tile home-tile-e" src="assets/img/suggestion-pizza-right-crop.png" alt="Weekend suggestion pizza">
         </div>
-      </section>
+          </section>
+        </div>
 
-      <!-- Events -->
-      <section class="section events" id="events">
+        <div class="home-section-band home-section-band--events">
+          <!-- Events -->
+          <section class="section events" id="events">
         <div class="container home-events-top">
           <div>
             <h2>Events</h2>
@@ -206,10 +221,10 @@
             <a href="#contact">READ MORE</a>
           </article>
         </div>
-      </section>
+          </section>
 
-      <!-- Photo Gallery -->
-      <section class="section gallery" id="photos">
+          <!-- Photo Gallery -->
+          <section class="section gallery" id="photos">
         <div class="container home-gallery-grid">
           <div class="home-gallery-copy">
             <h2>Photo Gallery</h2>
@@ -245,10 +260,10 @@
             </div>
           </div>
         </div>
-      </section>
+          </section>
 
-      <!-- Stay informed + Newsletter -->
-      <section class="section home-stay-informed" id="newsletter">
+          <!-- Stay informed + Newsletter -->
+          <section class="section home-stay-informed" id="newsletter">
         <div class="container home-stay-intro">
           <h2>Stay informed</h2>
           <p>
@@ -258,7 +273,6 @@
           </p>
         </div>
         <div class="container home-newsletter-box">
-          <img src="assets/img/events-card-04-interior-lounge.png" alt="Newsletter ambience">
           <div class="home-newsletter-content">
             <p class="home-eyebrow">NEWSLETTER</p>
             <h3>Subscribe To Our Newsletter</h3>
@@ -270,8 +284,10 @@
             </form>
           </div>
         </div>
-      </section>
-    </main>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <!-- Footer -->
     <footer class="site-footer" id="about">
