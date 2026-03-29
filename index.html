@@ -99,7 +99,7 @@
               telephone number or email address or simply drop by the café for a pleasant time!
             </p>
           </article>
-          <figure class="home-menu-visual home-menu-visual--drinks arch">
+          <figure class="home-menu-visual home-menu-visual--drinks">
             <img src="assets/img/drinks-berry-splash.png" alt="Drinks splash visual">
           </figure>
           <aside class="home-menu-side">
@@ -119,6 +119,10 @@
         </div>
           </section>
 
+          <div class="container home-menu-logo-divider" aria-hidden="true">
+            <img class="home-menu-logo-divider__asset" src="assets/img/logo/transparency-rogo.png" alt="">
+          </div>
+
           <!-- Small Hunger -->
           <section class="section home-menu-block home-menu-block--alt" id="small-hunger">
         <div class="container home-menu-grid">
@@ -133,7 +137,7 @@
               cheeks with abbey beer.
             </p>
           </article>
-          <figure class="home-menu-visual arch">
+          <figure class="home-menu-visual">
             <img src="assets/img/small-hunger-chips-floating.png" alt="Small hunger dishes">
           </figure>
           <aside class="home-menu-side">
@@ -153,6 +157,10 @@
         </div>
           </section>
 
+          <div class="home-menu-divider" aria-hidden="true">
+            <img class="home-menu-divider__asset" src="assets/img/rogo&bar.png" alt="">
+          </div>
+
           <!-- Weekend Suggestion -->
           <section class="section home-suggestion" id="suggestions">
         <div class="container home-suggestion-head">
@@ -170,13 +178,9 @@
             </span>
           </a>
         </div>
-        <div class="container home-suggestion-collage">
-          <img class="home-tile home-tile-a" src="assets/img/suggestion-mojito-center-arch.png" alt="Weekend suggestion center drink">
-          <img class="home-tile home-tile-b" src="assets/img/suggestion-drink-left-arch.png" alt="Weekend suggestion left drink">
-          <img class="home-tile home-tile-c" src="assets/img/suggestion-loaded-fries-arch.png" alt="Weekend suggestion loaded fries">
-          <img class="home-tile home-tile-d" src="assets/img/suggestion-meal-right-arch.png" alt="Weekend suggestion meal">
-          <img class="home-tile home-tile-e" src="assets/img/suggestion-pizza-right-crop.png" alt="Weekend suggestion pizza">
-        </div>
+        <figure class="home-suggestion-visual">
+          <img src="assets/img/Weekend-suggestion.png" alt="Weekend suggestion dishes and drinks">
+        </figure>
           </section>
         </div>
 
@@ -184,7 +188,7 @@
           <!-- Events -->
           <section class="section events" id="events">
         <div class="container home-events-top">
-          <div>
+          <div class="home-events-intro">
             <h2>Events</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -193,33 +197,53 @@
             </p>
           </div>
           <div class="arrow-group" aria-label="Events static arrows">
-            <button type="button" class="arrow-btn" data-events-nav="prev" aria-label="Previous events">&#8592;</button>
-            <button type="button" class="arrow-btn" data-events-nav="next" aria-label="Next events">&#8594;</button>
+            <button type="button" class="arrow-btn" data-events-nav="prev" aria-label="Previous events">
+              <img class="arrow-btn__icon arrow-btn__icon--prev" src="assets/img/Contact.png" alt="">
+            </button>
+            <button type="button" class="arrow-btn" data-events-nav="next" aria-label="Next events">
+              <img class="arrow-btn__icon" src="assets/img/Contact.png" alt="">
+            </button>
           </div>
         </div>
-        <div class="container home-event-cards" data-events-track>
-          <article class="home-event-card is-active" data-event-card>
-            <img src="assets/img/events-card-01-relax-bar.png" alt="Relax bar event scene">
-            <time datetime="2021-04-16">16 APR 2021</time>
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-            <a href="#contact">READ MORE</a>
-          </article>
-          <article class="home-event-card" data-event-card>
-            <img src="assets/img/events-card-03-terrace.png" alt="Terrace event scene">
-            <time datetime="2021-04-16">16 APR 2021</time>
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-            <a href="#contact">READ MORE</a>
-          </article>
-          <article class="home-event-card" data-event-card>
-            <!-- TODO_VERIFY: rightmost cut-off card full text -->
-            <img src="assets/img/events-card-05-photo-wall-crop.png" alt="Photo wall event scene">
-            <time datetime="2021-04-16">16 APR 2021</time>
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-            <a href="#contact">READ MORE</a>
-          </article>
+        <div class="home-events-slider">
+          <div class="home-event-cards" data-events-track>
+            <article class="home-event-card is-active" data-event-card>
+              <img src="assets/img/events-card-01-relax-bar.png" alt="Relax bar event scene">
+              <time datetime="2021-04-16">16 APR 2021</time>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <a href="#contact">READ MORE</a>
+            </article>
+            <article class="home-event-card" data-event-card>
+              <img src="assets/img/events-card-02-entrance.png" alt="Cafe entrance event scene">
+              <time datetime="2021-04-16">16 APR 2021</time>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <a href="#contact">READ MORE</a>
+            </article>
+            <article class="home-event-card" data-event-card>
+              <img src="assets/img/events-card-03-terrace.png" alt="Terrace event scene">
+              <time datetime="2021-04-16">16 APR 2021</time>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <a href="#contact">READ MORE</a>
+            </article>
+            <article class="home-event-card" data-event-card>
+              <img src="assets/img/events-card-04-interior-lounge.png" alt="Interior lounge event scene">
+              <time datetime="2021-04-16">16 APR 2021</time>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <a href="#contact">READ MORE</a>
+            </article>
+            <article class="home-event-card" data-event-card>
+              <!-- TODO_VERIFY: rightmost cut-off card full text -->
+              <img src="assets/img/events-card-05-photo-wall-crop.png" alt="Photo wall event scene">
+              <time datetime="2021-04-16">16 APR 2021</time>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <a href="#contact">READ MORE</a>
+            </article>
+          </div>
         </div>
           </section>
 
@@ -234,33 +258,38 @@
               what you can expect when you visit the café. So be sure to check out these photos!
             </p>
             <div class="arrow-group" aria-label="Photo gallery navigation">
-              <button type="button" class="arrow-btn" data-gallery-nav="prev" aria-label="Previous photo">&#8592;</button>
-              <button type="button" class="arrow-btn" data-gallery-nav="next" aria-label="Next photo">&#8594;</button>
+              <button type="button" class="arrow-btn" data-gallery-nav="prev" aria-label="Previous photo">
+                <img class="arrow-btn__icon arrow-btn__icon--prev" src="assets/img/Contact.png" alt="">
+              </button>
+              <button type="button" class="arrow-btn" data-gallery-nav="next" aria-label="Next photo">
+                <img class="arrow-btn__icon" src="assets/img/Contact.png" alt="">
+              </button>
             </div>
-            <span class="since-mark">Since 1927</span>
           </div>
           <div class="gallery-media">
-            <figure class="home-gallery-main arch">
-              <img src="assets/img/gallery-pancakes.png" alt="Photo Gallery" data-gallery-main>
-              <figcaption data-gallery-caption>Photo Gallery</figcaption>
-            </figure>
-            <div class="home-gallery-thumbs">
-              <button type="button" class="home-thumb is-active" data-gallery-thumb data-src="assets/img/gallery-pancakes.png" data-caption="Photo Gallery">
-                <img src="assets/img/gallery-pancakes.png" alt="Gallery preview pancakes">
-              </button>
-              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-salad.png" data-caption="Salad">
-                <img src="assets/img/gallery-salad.png" alt="Gallery preview salad">
-              </button>
-              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-dessert-crop.png" data-caption="Dessert">
-                <img src="assets/img/gallery-dessert-crop.png" alt="Gallery preview dessert">
-              </button>
-              <button type="button" class="home-thumb" data-gallery-thumb data-src="assets/img/gallery-pizza.png" data-caption="Pizza">
-                <img src="assets/img/gallery-pizza.png" alt="Gallery preview pizza">
-              </button>
+            <div class="home-gallery-slider">
+              <div class="home-gallery-track" data-gallery-track>
+                <button type="button" class="home-gallery-item" data-gallery-item aria-label="Pancakes photo">
+                  <img src="assets/img/gallery-pancakes.png" alt="Gallery preview pancakes">
+                </button>
+                <button type="button" class="home-gallery-item" data-gallery-item aria-label="Salad photo">
+                  <img src="assets/img/gallery-salad.png" alt="Gallery preview salad">
+                </button>
+                <button type="button" class="home-gallery-item" data-gallery-item aria-label="Pizza photo">
+                  <img src="assets/img/gallery-pizza.png" alt="Gallery preview pizza">
+                </button>
+                <button type="button" class="home-gallery-item" data-gallery-item aria-label="Cake photo">
+                  <img src="assets/img/gallery-dessert-crop.png" alt="Gallery preview cake">
+                </button>
+              </div>
             </div>
           </div>
         </div>
           </section>
+
+          <div class="home-menu-divider" aria-hidden="true">
+            <img class="home-menu-divider__asset" src="assets/img/rogo&bar.png" alt="">
+          </div>
 
           <!-- Stay informed + Newsletter -->
           <section class="section home-stay-informed" id="newsletter">
