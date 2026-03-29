@@ -2,3 +2,162 @@
 .page-contact-us {
   /* TODO: page-specific styles */
 }
+
+.page-contact-us .contact{
+  
+}
+/* Page: Contact Us */
+.page-contact-us .contact {
+  background-color: #13110f;
+}
+
+.page-contact-us .contact-hero {
+  position: relative;
+  padding: 80px 0;
+  background-image: url("../../img/contact-hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.page-contact-us .contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  z-index: 0;
+}
+
+.page-contact-us .contact-hero__inner {
+  position: relative;
+  z-index: 1;
+  width: min(1223px, calc(100% - 80px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  grid-template-areas:
+    "title lead"
+    "menu  lead";
+  align-items: start;
+}
+
+.page-contact-us .contact-hero__title {
+  grid-area: title;
+  color: #fff;
+  font-size: clamp(4.4rem, 7vw, 6.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.page-contact-us .contact-hero__lead {
+  grid-area: lead;
+  margin-top: 140px;
+  transform: translateX(-140px);
+  color: #969493;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.page-contact-us .contact-hero__menu {
+  grid-area: menu;
+  margin-top: 8px;
+}
+
+.page-contact-us .cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #dcca87;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.page-contact-us .cta-link::before {
+  content: "";
+  width: 92px;
+  height: 1px;
+  background: currentColor;
+}
+
+.page-contact-us .cta-ring {
+  width: 52px;
+  height: 52px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+
+
+.page-contact-us .contact-form {
+  padding: 96px 0 120px;
+}
+
+.page-contact-us .contact-form__inner {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-contact-us .contact-form__title {
+  margin-bottom: 16px;
+  color: #dcca87;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 1;
+}
+
+.page-contact-us .contact-form__form {
+  margin-top: 48px;
+  display: grid;
+  gap: 24px;
+  text-align: left;
+}
+
+.page-contact-us .contact-form__group {
+  display: grid;
+  gap: 10px;
+}
+
+.page-contact-us .contact-form__group label {
+  color: #969493;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-contact-us .contact-form__group input,
+.page-contact-us .contact-form__group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(220, 202, 135, 0.45);
+  background: rgba(255, 255, 255, 0.04);
+  color: #969493;
+  font: inherit;
+}
+
+.page-contact-us .contact-form__group textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.page-contact-us .contact-form__group input::placeholder,
+.page-contact-us .contact-form__group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.page-contact-us .contact-form__button {
+  justify-self: center;
+  min-width: 220px;
+  padding: 16px 24px;
+  border: 1px solid #dcca87;
+  background: transparent;
+  color: #dcca87;
+  font: inherit;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
