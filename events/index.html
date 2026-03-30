@@ -6,9 +6,18 @@
   <title>CAFE REGINA | Events</title>
   <meta name="description" content="Events page placeholder for CAFE REGINA.">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
 </head>
 <body class="page page-events">
-  <main style="min-height:100vh;display:grid;place-items:center;padding:2rem;text-align:center;">
+  <header id="header-placeholder"></header>
+
+  <div class="back-link flex">
+    <img src="../assets/img/Contact.png" class="back-link__arrowbox cta-link__icon"></img>
+    <p class="back-link__text">BACK TO HOME</p>
+  </div>
+
+  <main style="min-height:100vh;text-align:center;" class="events-inner">
+
     <section>
       <p style="color:#dcca87;letter-spacing:.2em;text-transform:uppercase;">Coming Soon</p>
       <h1 style="margin:0.5rem 0 1rem 0;">Events</h1>
@@ -18,5 +27,13 @@
       <a href="../index.html" style="color:#dcca87;letter-spacing:.12em;text-transform:uppercase;">Back to Home</a>
     </section>
   </main>
+
+  <script>
+  fetch('/assets/components/header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+</script>
 </body>
 </html>
