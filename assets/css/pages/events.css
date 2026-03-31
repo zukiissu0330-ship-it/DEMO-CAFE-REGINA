@@ -1,4 +1,31 @@
 /* Page: Events */
 .page-events {
-  /* TODO: page-specific styles */
+  background: var(--color-bg);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.back-link {
+  gap: 20px;
+  padding: 25px 0;
+  height: 97px;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-link__arrowbox.cta-link__icon {
+  rotate: 180deg;
+}
+
+.back-link__text {
+  color: var(--color-accent);
+  font-size: 18px;
+  letter-spacing: 0.25em;
+}
+
+.events-inner {
+  padding: 70px 2rem 100px ;
 }
