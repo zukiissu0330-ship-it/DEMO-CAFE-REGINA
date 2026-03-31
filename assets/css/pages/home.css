@@ -247,10 +247,26 @@
 }
 
 .home-top-band::before {
+  z-index: -2;
+  background-color: #090806;
   background-image:
-    linear-gradient(180deg, rgba(9, 8, 6, 0.2) 0%, rgba(9, 8, 6, 0.48) 42%, rgba(9, 8, 6, 0.92) 100%),
-    url("../../img/background/home-hero-bg.png");
+    linear-gradient(180deg, rgba(9, 8, 6, 0.16) 0%, rgba(9, 8, 6, 0.42) 42%, rgba(9, 8, 6, 0.92) 100%);
+}
+
+.home-top-band::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1440px, 100vw);
+  aspect-ratio: 1440 / 1123;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("../../img/background/home-hero-bg.png");
+  background-repeat: no-repeat;
   background-position: center top;
+  background-size: 100% auto;
 }
 
 .home-section-band::before {
@@ -570,6 +586,7 @@
 /* Events */
 .home-section-band--events #events {
   padding-top: 53.1px;
+  padding-bottom: 0;
 }
 
 .home-events-top {
@@ -583,9 +600,42 @@
 }
 
 .home-events-intro {
+  position: relative;
   display: grid;
   gap: 1rem;
   justify-items: center;
+}
+
+.home-events-intro > :not(.home-events-brand-deco) {
+  position: relative;
+  z-index: 1;
+}
+
+.home-events-brand-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.home-events-brand-deco__item {
+  position: absolute;
+  top: calc(100% - 1rem - 222.5px);
+  width: 445px;
+  height: 445px;
+  background-image: url("../../img/logo/transparency-rogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 445px 445px;
+  opacity: 0.14;
+}
+
+.home-events-brand-deco__item--left {
+  left: calc(50% - 50vw - 208px);
+}
+
+.home-events-brand-deco__item--right {
+  right: calc(50% - 50vw - 196px);
+  transform: scaleX(-1);
 }
 
 .home-events-top p {
@@ -682,7 +732,18 @@
   letter-spacing: 0.14em;
 }
 
+.home-events-gallery-divider {
+  width: 100vw;
+  height: 2px;
+  margin: 100px calc(50% - 50vw);
+  background: rgba(255, 255, 255, 0.2);
+}
+
 /* Gallery */
+.home-section-band--events .gallery {
+  padding-top: 0;
+}
+
 .home-gallery-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
@@ -885,8 +946,17 @@
 
 
 @media (max-width: 1180px) {
+  /* Responsive tuning: ease header crowding before tablet layout */
+  .home-header-inner {
+    gap: clamp(0.9rem, 2vw, 1.5rem);
+  }
+
   .home-nav-list {
     gap: 1.1rem;
+  }
+
+  .home-nav-list a {
+    font-size: 0.88rem;
   }
 
   .home-hero-title {
@@ -909,7 +979,105 @@
   }
 }
 
+@media (max-width: 1024px) {
+  /* Responsive tuning: reduce Hero crowding before the mobile stack kicks in */
+  .home-header-inner {
+    flex-wrap: wrap;
+  }
+
+  .home-nav {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .home-nav-list {
+    justify-content: flex-start;
+  }
+
+  .home-hero {
+    padding-top: clamp(4.6rem, 8vw, 5.2rem);
+  }
+
+  .home-hero-title {
+    top: 15%;
+    width: 78%;
+    height: 40%;
+    font-size: clamp(2.9rem, 5.4vw, 4.75rem);
+  }
+
+  .home-hero-float--left {
+    top: 52%;
+    width: 15%;
+  }
+
+  .home-hero-float--right {
+    width: 16%;
+  }
+
+  .home-hero-copy,
+  .home-hero-contact {
+    left: 74%;
+    width: 18%;
+    max-width: 180px;
+  }
+
+  .home-hero-pagination {
+    left: 26%;
+    width: 48%;
+  }
+
+  .home-hero-pagination li.is-active {
+    margin-right: clamp(9rem, 18vw, 14rem);
+  }
+
+  .home-hero-pagination li.is-active::after {
+    width: clamp(9rem, 18vw, 14rem);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Responsive tuning: make header and newsletter stack cleanly on narrow tablets */
+  .home-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding-inline: 1rem;
+  }
+
+  .home-brand {
+    width: 88px;
+    height: 88px;
+    flex-basis: 88px;
+  }
+
+  .home-nav-list {
+    gap: 0.65rem 0.9rem;
+  }
+
+  .home-nav-list a {
+    font-size: 0.8rem;
+  }
+
+  .home-events-brand-deco {
+    display: none;
+  }
+
+  .home-newsletter-form {
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .home-newsletter-content h3 {
+    white-space: normal;
+  }
+}
+
 @media (max-width: 860px) {
+  .home-top-band::after {
+    content: none;
+  }
+
   .home-header {
     position: static;
     border-bottom: none;
@@ -945,12 +1113,16 @@
   .home-hero-stage {
     aspect-ratio: auto;
     min-height: 420px;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
   }
 
   .home-hero-main {
     position: relative;
     inset: auto;
-    width: 100%;
+    width: min(68vw, 24rem);
+    margin-inline: auto;
   }
 
   .home-hero-main img {
@@ -958,9 +1130,14 @@
   }
 
   .home-hero-title {
-    position: static;
-    margin-top: 1rem;
-    text-align: left;
+    position: absolute;
+    top: clamp(3.5rem, 18vw, 6.5rem);
+    left: 50%;
+    width: min(88%, 14ch);
+    margin: 0;
+    justify-items: center;
+    text-align: center;
+    transform: translateX(-50%);
     font-size: clamp(2.2rem, 11vw, 3.5rem);
     line-height: 0.98;
   }
@@ -1001,6 +1178,19 @@
   .home-hero-contact {
     position: static;
     margin-top: 1rem;
+    margin-inline: auto;
+    width: fit-content;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .home-hero-contact .cta-link__visual {
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  .home-hero-contact .cta-link__icon {
+    width: clamp(64px, 16vw, 92px);
   }
 
   .home-hero-footer {
@@ -1030,6 +1220,22 @@
     min-height: auto;
   }
 
+  .home-events-brand-deco__item {
+    width: 320px;
+    height: 320px;
+    top: calc(100% - 1rem - 160px);
+    background-size: 320px 320px;
+    opacity: 0.1;
+  }
+
+  .home-events-brand-deco__item--left {
+    left: calc(50% - 50vw - 228px);
+  }
+
+  .home-events-brand-deco__item--right {
+    right: calc(50% - 50vw - 228px);
+  }
+
   .home-events-slider {
     width: calc(100% - 1rem);
   }
@@ -1043,7 +1249,32 @@
   }
 }
 
+@media (max-width: 480px) {
+  /* Responsive tuning: tighten the smallest phone layout without changing the visual language */
+  .section {
+    padding-block: 3rem;
+  }
+
+  .home-hero-stage {
+    min-height: 360px;
+  }
+
+  .home-newsletter-content {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .home-newsletter-form button {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
+  .home-events-brand-deco {
+    display: none;
+  }
+
   .home-newsletter-copy {
     min-height: auto;
   }
