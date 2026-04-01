@@ -59,7 +59,7 @@
 }
 
 .site-nav-list a {
-  color: var(--color-text-main);
+  color: var(--color-text-muted);
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 400;
@@ -110,7 +110,16 @@
     flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 960px) {
+  .site-nav {
+    display: none;
+  }
 
+  .brand-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 /* Footer */
 .site-footer {
