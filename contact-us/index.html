@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="page page-contact-us">
+  <header id="header-placeholder"></header>
 <main class="contact">
   <!-- ヒーロー -->
 <section class="contact-hero">
@@ -21,33 +22,76 @@
       </a>
     </div>
 
-    <p class="contact-hero__lead">
-      You will always have a good time at Café Regina in Zelzate! You can enjoy an extensive drinks menu here, but you are also in the right place if you are hungry. You will also find some tasty weekend suggestions here! So don't hesitate to contact us by telephone or email or just drop by.
-    </p>
-
+<div class="contact-hero__lead">
+  <p>You will always have a good time at Café Regina in Zelzate! You can enjoy an extensive drinks menu here, but you are also in the right place if you are hungry. You will also find some tasty weekend suggestions here! So don't hesitate to contact us by telephone or email or just drop by.</p>
+  <p>You will also find many other things on this website. Here you will find nice atmospheric photos, a guestbook with customer responses and a newsletter so that you can stay informed of the latest news and special offers.</p>
+</div>
+    
   </div>
 </section>
 
   <!-- フォーム -->
   <section class="contact-form">
     <div class="contact-form__inner">
+ 
+      <p class="contact-form__subtitle">Get in touch</p>
       <h2 class="contact-form__title">Contact Us</h2>
-      <form class="contact-form__form" action="#" method="post">
-        <div class="contact-form__group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name">
+      <p class="contact-form__tagline">Will do feedback as fast as we can!</p>
+ 
+      <form class="contact-form__form" id="contactForm" action="#" method="post" novalidate>
+ 
+        <!-- 行1: First Name / Last Name -->
+        <div class="contact-form__row">
+          <div class="contact-form__group">
+            <label class="sr-only" for="firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="firstName" name="firstName"
+                   placeholder="First Name"
+                   required
+                   autocomplete="given-name">
+          </div>
+          <div class="contact-form__group">
+            <label class="sr-only" for="lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="lastName" name="lastName"
+                   placeholder="Last Name"
+                   required
+                   autocomplete="family-name">
+          </div>
         </div>
+ 
+        <!-- 行2: Mobile Number -->
         <div class="contact-form__group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email">
+          <label class="sr-only" for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile"
+                 placeholder="Mobile Number"
+                 autocomplete="tel">
         </div>
+ 
+        <!-- 行3: Email Address -->
         <div class="contact-form__group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+          <label class="sr-only" for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" name="email"
+                 placeholder="Email Address"
+                 required
+                 autocomplete="email">
         </div>
-        <button type="submit" class="contact-form__button">
-          SEND
-        </button>
+ 
+        <!-- 行4: Message -->
+        <div class="contact-form__group">
+          <label class="sr-only" for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message"
+                    placeholder="Your message…"
+                    required></textarea>
+        </div>
+ 
+        <div class="contact-form__footer">
+          <span class="contact-form__note"><span style="color:var(--gold);">*</span> required fields</span>
+          <button type="submit" class="contact-form__button">Send</button>
+        </div>
+ 
+        <div class="contact-form__success" id="successMsg" role="alert">
+          Thank you! We'll get back to you as soon as possible.
+        </div>
+ 
       </form>
     </div>
   </section>
@@ -62,6 +106,12 @@
   </section> -->
 </main>
 
-
+<script>
+  fetch('../assets/components/header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+</script>
 </body>
 </html>
