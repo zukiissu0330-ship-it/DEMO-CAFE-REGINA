@@ -12,12 +12,14 @@
 <body class="page page-events">
   <header id="header-placeholder"></header>
 
-  <div class="back-link flex">
-    <img src="../assets/img/Contact.png" class="back-link__arrowbox cta-link__icon"></img>
-    <p class="back-link__text">BACK TO HOME</p>
-  </div>
+  <a href="#">
+    <div class="back-link flex">
+      <img src="../assets/img/Contact.png" class="back-link__arrowbox cta-link__icon"></img>
+      <p class="back-link__text">BACK TO HOME</p>
+    </div>
+  </a>
 
-  <main style="min-height:100vh;text-align:center;place-items:center;" class="events-inner">
+  <main style="text-align:center;place-items:center;" class="events-inner">
 
     <section class="event-content__wrap">
       <div class="event-content__inner flex">
@@ -43,8 +45,62 @@
         </div>
       </div>
     </section>
-  </main>
 
+  </main>
+  
+  <footer class="site-footer" id="about">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <section class="footer-contact" id="contact" aria-labelledby="footer-contact-title">
+          <h2 id="footer-contact-title">Contact Us</h2>
+          <address>
+            <p>Grote Markt 15 9060 Zelzate</p>
+            <p>(East Flanders) Belgium</p>
+            <p><a href="tel:+32468068091">+0468 06 80 91</a></p>
+            <p><a href="mailto:info@caferegina.be">info@caferegina.be</a></p>
+            <p>VAT BE 0768.703.620</p>
+          </address>
+        </section>
+
+        <section class="footer-brand-block" aria-labelledby="footer-brand-title">
+          <h2 class="footer-brand-title" id="footer-brand-title">CAFE REGINA</h2>
+          <p class="footer-brand-copy">
+            Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.
+          </p>
+          <span class="footer-brand-line" aria-hidden="true"></span>
+          <ul class="social-list" aria-label="Social links">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <img class="social-list__icon social-list__icon--facebook" src="../assets/img/logo/Facebook_Logo.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="X">
+                <img class="social-list__icon social-list__icon--x" src="../assets/img/logo/xlogo.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img class="social-list__icon social-list__icon--instagram" src="../assets/img/logo/Instagram_Logo.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-hours" aria-labelledby="footer-hours-title">
+          <h2 id="footer-hours-title">Opening Hours</h2>
+          <p>Monday-Friday:</p>
+          <p>08:00 am -12:00 am</p>
+          <p>Saturday-Sunday:</p>
+          <p>07:00am -11:00 pm</p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>2024 Cafe Regina. All Rights reserved.</p>
+      </div>
+    </div>
+  </footer>
   <script>
   fetch('/assets/components/header.html')
     .then(res => res.text())

@@ -18,6 +18,12 @@
 
 .back-link__arrowbox.cta-link__icon {
   rotate: 180deg;
+  transition: transform 0.22s ease;
+  width: clamp(76px, 8vw, 106px);
+}
+
+.back-link__arrowbox.cta-link__icon:hover {
+  transform: translateX(0.7rem);
 }
 
 .back-link__text {
@@ -79,4 +85,8 @@
   .event-content__textwrap {
     width: 100%;
   }
+}
+
+.site-footer {
+  margin-top: 0;
 }
